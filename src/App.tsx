@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { 
+  BrowserRouter,
+  Switch} from 'react-router-dom';
+import LayoutRoute from './Pages/PageLayouts/LayoutRoute';
+import { LayoutWithMenuTop } from './Pages/PageLayouts/LayoutWithMenuTop';
+import { LayoutWithMenuLeft } from './Pages/PageLayouts/LayoutWithMenuLeft';
+import HomePage from './Pages/HomePage/HomePage';
+import FormPage from './Pages/FormPage/FormPage';
+import NotFoundPage from './Pages/NotFoundPage';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+      <Switch>
+        <LayoutRoute path={"/"} layout={LayoutWithMenuTop} component={HomePage} exact/>
+        <LayoutRoute path={"/form"} layout={LayoutWithMenuLeft} component={FormPage} exact/>
+        <LayoutRoute layout={LayoutWithMenuTop} component={NotFoundPage}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
