@@ -1,4 +1,7 @@
+@import "tailwindcss/components";
+
 .App {
+  @apply bg-primary-100;
   background-color: #bad1ff;
   text-align: center;
   height: 100vh;
@@ -110,6 +113,4 @@ form {
   padding: 20px;
 }
 
-.full-width {
-  width: 100%;
-}
+@import "tailwindcss/utilities";

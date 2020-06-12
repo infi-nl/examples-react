@@ -29,7 +29,7 @@ export class ExampleForm extends React.Component<{}, ExampleFormState> {
             }} />
           </label>
 
-          <div className="full-width">
+          <div className="w-full">
             <button type="submit">Submit</button>
           </div>
         </form>
