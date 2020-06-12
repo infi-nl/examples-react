@@ -89,6 +89,7 @@ module.exports = {
                     },
                     'css-loader',
                     'sass-loader',
+                    'postcss-loader',
                 ],
             },
         ]
