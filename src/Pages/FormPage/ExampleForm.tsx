@@ -30,7 +30,7 @@ export class ExampleForm extends React.Component<{}, ExampleFormState> {
           </label>
 
           <div className="full-width">
-            <button type="submit">Submit</button>
+            <button className="btn btn-secondary" type="submit">Submit</button>
           </div>
         </form>
         <EnhancedPrompt
