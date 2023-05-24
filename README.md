@@ -1,5 +1,9 @@
 This project contains some example when building a React App using Webpack and Typescript.
 
+----
+**⚠ Warning:** This repository is _frozen in time_, and getting no new (security) updates. It is left public, should it help and offer some guidance around its subjects to future visitors. However, for latest guidance on involved subjects, we recommend going to the official sources.
+----
+
 ## Available npm Scripts
 ### `npm install`
 In order to install all dependencies and package that are needed to run the provided React Application.
